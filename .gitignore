@@ -1,0 +1,5 @@
+**/.quarto/
+**/_site/
+**/.quarto/*
+**/_book/*
+/.DS_Store/

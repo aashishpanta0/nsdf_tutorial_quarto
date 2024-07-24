@@ -1,0 +1,7 @@
+---
+title: "Explore Subregions"
+format:
+  html:
+    css: ../nb.css
+---
+{{< embed ../Explore_Data.ipynb# echo=true >}}

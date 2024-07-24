@@ -1,0 +1,92 @@
+# Running Tutorials from Scratch
+
+
+
+This session provides detailed instructions for setting up and running the workflow from the beginning. You have two options: you can set up a [Docker container](#using-a-docker-container) or configure your [local machine](#using-your-local-machine) for deployment. These instructions are designed for users with more advanced technical skills, and they can be customized to incorporate your application with GEOtiled.
+
+## Using a Docker container
+
+To build the docker image in your local machine:
+
+```{.bash}
+docker build --platform linux/amd64 -t globalcomputinglab/somospie_openvisus .
+```
+
+To pull the image from Dockerhub:
+
+```{.bash}
+docker pull --platform linux/amd64 globalcomputinglab/somospie_openvisus:tutorial
+```
+
+To run:
+
+```{.bash}
+docker run -d -p 5000:5000 -p 8989:8989 --name tutorial --platform linux/amd64 globalcomputinglab/somospie_openvisus
+```
+
+Follow this URL to run the Jupyter Notebook `Tutorial.ipynb`:
+
+```{.bash}
+http://localhost:5000/
+```
+
+## Using your local machine
+
+[Conda](https://www.anaconda.com/download/) is used to control all the dependencies in this project; the file `environment.yml` contains the list of required versions:
+
+```
+# environment.yml
+
+name: somospie
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - gdal
+  - ipykernel==6.29.2
+  - ipywidgets==8.1.2
+  - xmltodict
+  - requests
+  - colorcet
+  - jupyterlab
+  - tifffile
+  - rasterio
+  - imagecodecs
+  - boto3
+  - param==2.0.2
+  - bokeh==3.3.4
+  - ipywidgets-bokeh==1.5.0
+  - pip
+  - pip:
+      - panel==1.3.8
+      - OpenVisusNoGui==2.2.128
+
+```
+
+To install the dependencies in your local machine, use the following command:
+
+> :bulb: **Note:** Conda is mandatory in this step, use [this](https://www.anaconda.com/download/) link to install it
+
+```
+conda env create -f environment.yml
+```
+
+Activate the virtual environment:
+
+```
+conda activate somospie
+```
+
+Install OpenVisus dependencies:
+
+```
+# use this file to install openvisus in your local machine
+./setup_openvisuspy.sh
+```
+
+Run the Jupyter Notebook and follow the internal instructions:
+
+```
+jupyter notebook Tutorial.ipynb
+```

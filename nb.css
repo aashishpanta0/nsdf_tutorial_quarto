@@ -1,0 +1,14 @@
+body .container {
+    max-width: 100% !important;
+}
+
+.cell {
+    /* display: flex; */
+    text-align: left;
+}
+
+.output_wrapper {
+    /* display: flex;
+    justify-content: flex-start; */
+    text-align: left;
+}

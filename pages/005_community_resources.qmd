@@ -1,0 +1,22 @@
+# Community and Resources
+
+
+NSDF and SOMOSPIE are open-source projects. Questions, discussion, and contributions are welcome. Contributions can be anything from new packages to bug fixes, documentation, or even new core features.
+
+NSDF Resources:
+
+- **Slack workspace**: [nsdf-workspace](https://nsdf-workspace.slack.com/).
+- **Github Discussions**: [issues](https://github.com/nsdf-fabric/catalog-comparison-tool/issues): Discussions and Q&A.
+- **Mailing list**: [https://groups.google.com/g/nsdf](https://groups.google.com/g/nsdf) - nsdf@googlegroups.com
+- **Twitter**: [@FabricNsdf](https://twitter.com/FabricNsdf)
+
+OpenVisus Resources:
+
+- **Github:** [Open Source distribution of the ViSUS capabilities](https://github.com/sci-visus/openvisus)
+- **Webpage:** [VISUS - High performance Big Data Analysis and Visualization Solutions](https://visus.org/)
+
+SOMOSPIE Resources:
+
+- **GitHub:** [SOMOSPIE software](https://github.com/TauferLab/SOMOSPIE)
+- **Webpage:** [SOMOSPIE overview](https://globalcomputing.group/somospie)
+- **Questions:** Michela Taufer [mtaufer@utk.edu](email:mtaufer@utk.edu)

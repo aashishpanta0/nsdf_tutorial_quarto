@@ -1,0 +1,72 @@
+# Tutorials Setup
+
+## Running the Tutorial with GitHub Codespaces
+>  **Note:** To follow this tutorial using the GitHub Codespaces you must have a GitHub Account
+
+Use your GitHub account to run this tutorial with GitHub Codespaces
+
+Please click the next button to open in GitHub Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/nsdf-fabric/Tutorial_2024_IEEE_VIS?devcontainer_path=.devcontainer/session+II/devcontainer.json)
+
+Now follow these steps to set up your virtual environment using GitHub codespaces:
+
+Verify that you are using the `main` branch, the repository name `nsdf-fabric/Tutorial_2024_IEEE_VIS` and the dev container configuration `NSDF Tutorial - Session II`. Then click on `Create Codespace`
+
+<p align="center">
+    <img src="../images/codespaces.png" width="800">
+    <br>
+    <em>Figure 2. Creating GitHub codespaces.</em>
+</p>
+
+>  **Note:** This process may take a couple of minutes.
+
+<p align="center">
+    <img src="../images/Creating_container.png" width="800">
+    <br>
+    <em>Figure 3. Setting up your Codespace.</em>
+</p>
+
+After creating the codespace, execute the tutorial notebook (Tutorial.ipynb)
+
+<p align="center">
+    <img src="../images/vscode.png" width="800">
+    <br>
+    <em>Figure 4. VS Code in GitHub Codespaces.</em>
+</p>
+
+## Running the Tutorial with Docker
+
+
+>  **Note:** To follow this tutorial you must have a computer with minimum **8 GB of RAM** and **5 GB of free disk**
+>
+> To run this tutorial, we have prepared a Docker container named [`globalcomputinglab/somospie_openvisus`](https://hub.docker.com/repository/docker/globalcomputinglab/somospie_openvisus/general) that includes all necessary software. Ensure you have installed Docker Desktop as outlined in the [Prerequisites](#prerequisites).
+
+** Note: Before following the next steps, make sure to open the Docker Desktop Application.**
+
+Now open the terminal and follow the next steps to deploy the tutorial in the Docker container:
+
+```{.bash}
+# Clone the tutorial repository:
+git clone https://github.com/nsdf-fabric/NSDF_Tutorial.git
+
+# Navigate to the tutorial directory:
+cd NSDF_Tutorial
+
+# Launch the Docker environment:
+docker-compose up -d
+```
+**Note:** If you get a `permission denied` error, please add `sudo` before the command. For example, `sudo docker-compose up -d`
+
+After executing the above command, open your preferred web browser (such as Google Chrome, Firefox, or Safari) and enter the following URL to access Jupyter Lab and the tutorial notebook (Tutorial.ipynb):
+
+```{.bash}
+ http://127.0.0.1:5000/lab/tree/Tutorial.ipynb
+```
+When you have finished the tutorial, ensure to stop the Docker container to free up resources. Do this by entering the following command in your terminal:
+
+```{.bash}
+# Stop the Docker container
+docker-compose down
+```
+

@@ -1,0 +1,22 @@
+# Introduction {.unnumbered}
+
+This tutorial introduces OpenVisus, an NSDF service that improves the way scientific data is accessed, analyzed, and visualized using cloud technologies. The tutorial provides step-by-step guidance using a module of the SOMOSPIE engine to collect raw data from a public source, like the USDA portal. This data is then converted into multiple files for analysis with NSDF and for storage on both public and private platforms. The module used is GEOtiled, the first step in the SOMOSPIE process, which efficiently calculates terrain attributes over large areas from digital elevation models (DEMs), maintaining high accuracy.
+
+
+
+Throughout the tutorial, you will learn how to:
+
+1. Construct a modular workflow that combines your application components with NSDF services.
+
+2. Upload, download, and stream data to and from public and private storage solutions.
+
+3. Deploy the NSDF dashboard for large-scale data access, visualization, and analysis.
+
+
+The slides introducing this tutorial can be downloaded [here](https://zenodo.org/records/10794642).
+ . This tutorial follows the steps in @fig-nsdf-workflow.
+
+
+
+
+![Workflow diagram illustrating the tutorial's process of data collection, transformation, analysis, and storage using the SOMOSPIE engine and NSDF services.](images/workflow.png){#fig-nsdf-workflow}

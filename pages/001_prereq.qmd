@@ -1,0 +1,44 @@
+# Prerequisites
+
+
+
+
+>  **Note:** These prerequisites are required to run the section 3 [Running the Tutorial with Docker](002_docker_codespaces.qmd) if your not using docker please skip this section and continue with the section 2 [Running the Tutorial with GitHub Codespaces](#running-the-tutorial-with-github-codespaces)
+
+Before starting this tutorial, ensure you have installed Git and Docker Desktop on your computer.
+
+- **To install Git**: Follow the [installation instructions](https://github.com/git-guides/install-git) for your operating system (Linux, Windows, or Mac).
+- **To install Docker Desktop**: Follow the [installation instructions](https://docs.docker.com/engine/install/) for your operating system (Linux, Windows, or Mac). **_Be sure you are running the most recent version of Docker! Previous versions to 4.15.10 may not work._**
+
+After installation, confirm that both tools are correctly set up by executing the following commands in your terminal.
+
+>  **Note:** For Windows users, we recommend using the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) terminal for these verifications.
+
+- To verify the GitHub installation:
+```{.bash}
+git --version
+```
+```{python}
+!git --version
+```
+
+(NOTE: git version can be different).
+
+
+
+- To verify Docker Desktop installation: Make sure you open the Docker Desktop application before running Docker commands.
+
+```{.bash}
+# Check the Docker installation information
+docker info
+```
+
+```{python}
+!docker info
+```
+
+
+>  **Note:** The specific numbers in the output might vary based on your installation details and additional information may also appear.
+
+The same instructions can also be found at [NSDF Tutorial Repository](https://github.com/nsdf-fabric/NSDF_Tutorial#prerequisites).
+

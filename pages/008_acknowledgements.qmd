@@ -1,0 +1,10 @@
+# Acknowledgments
+
+This project was created by the [NSDF team](https://nationalsciencedatafabric.org/contributors.html) and the SOMOSPIE team. To reach out, email us at [info@nationalsciencedatafabric.org](mailto:info@nationalsciencedatafabric.org) and Dr. Michela Taufer [mtaufer@utk.edu](mailto:mtaufer@utk.edu).
+
+
+The examples in this book use the OpenVisus library, which implements the data streaming technology presented in [@valerio-chapter2012;@10.1145/1944846.1944847;@10.1145/582034.582036].
+
+
+Other publications related to Somospie and the GeoTiled are presented in [@10255013;@9041768;@10.1145/3588195.3595941].
+
