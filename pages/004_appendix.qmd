@@ -34,7 +34,7 @@ http://localhost:5000/
 
 [Conda](https://www.anaconda.com/download/) is used to control all the dependencies in this project; the file `environment.yml` contains the list of required versions:
 
-```
+```{.bash}
 # environment.yml
 
 name: somospie
@@ -66,27 +66,27 @@ dependencies:
 
 To install the dependencies in your local machine, use the following command:
 
-> :bulb: **Note:** Conda is mandatory in this step, use [this](https://www.anaconda.com/download/) link to install it
+>  **Note:** Conda is mandatory in this step, use [this](https://www.anaconda.com/download/) link to install it
 
-```
+```{.bash}
 conda env create -f environment.yml
 ```
 
 Activate the virtual environment:
 
-```
+```{.bash}
 conda activate somospie
 ```
 
 Install OpenVisus dependencies:
 
-```
+```{.bash}
 # use this file to install openvisus in your local machine
 ./setup_openvisuspy.sh
 ```
 
 Run the Jupyter Notebook and follow the internal instructions:
 
-```
+```{.bash}
 jupyter notebook Tutorial.ipynb
 ```

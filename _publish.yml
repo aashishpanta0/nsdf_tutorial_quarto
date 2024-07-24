@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 5d6a6ba8-3adc-406b-b91a-ccbfc795f11a
+      url: 'https://aashishp.quarto.pub/nsdf-tutorial'

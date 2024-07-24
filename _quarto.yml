@@ -4,7 +4,7 @@ project:
 book:
   title: "NSDF Tutorial: Using NSDF for End-to-End Analysis of Scientific Data"
   author: "Aashish Panta, Jack Marquez, Heberth Martinez, Amy Gooch, Giorgio Scorzell, Michela Taufer, Valerio Pascucci"
-  date: "7/20/2024"
+  date: "7/24/2024"
   cover-image: images/Logos.png
   chapters:
     - index.qmd
@@ -14,21 +14,9 @@ book:
     - pages/003_tutorials_notebook.qmd
     - pages/005_explore_subregion.qmd
     - pages/005_community_resources.qmd
-    # - pages/007_authors.qmd
     - pages/008_acknowledgements.qmd
     - pages/references.qmd
 bibliography: references.bib
-
-format:
-  html:
-    theme: cosmo
-    toc: true
-    toc-depth: 5
-  pdf:
-    documentclass: scrreprt
-    cover-image: images/Logos.png
-
-
 execute:
   echo: false
 jupyter: python3
